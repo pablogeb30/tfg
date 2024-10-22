@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://c20wjp5o5c12r"]
+
+[ext_resource type="Script" path="res://02_scenes/02_objects/suspenso.gd" id="1_ulxhe"]
+[ext_resource type="Texture2D" uid="uid://diekwj1ybrclh" path="res://01_assets/01_sprites/suspenso.png" id="2_m0epf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ln4rn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_m0epf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3iq0"]
+size = Vector2(58, 74)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="suspenso" type="Area2D" parent="." groups=["suspenso"]]
+script = ExtResource("1_ulxhe")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="suspenso"]
+position = Vector2(69.7778, 132.563)
+scale = Vector2(0.0862268, 0.0862269)
+sprite_frames = SubResource("SpriteFrames_ln4rn")
+
+[node name="hit_zone" type="CollisionShape2D" parent="suspenso"]
+position = Vector2(68.7778, 131)
+shape = SubResource("RectangleShape2D_q3iq0")
+
+[connection signal="area_entered" from="suspenso" to="suspenso" method="_on_suspenso_area_entered"]

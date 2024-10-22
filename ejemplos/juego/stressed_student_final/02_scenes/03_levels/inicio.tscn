@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://e0iqxpt5b7dm"]
+
+[ext_resource type="Script" path="res://02_scenes/03_levels/inicio.gd" id="1_1jobo"]
+[ext_resource type="VideoStream" path="res://animacion_videojuego.ogv" id="1_y8odi"]
+[ext_resource type="Texture2D" uid="uid://nfcg07cxwi8" path="res://01_assets/01_sprites/menu.png" id="3_m4vik"]
+
+[node name="inicio" type="Node2D"]
+script = ExtResource("1_1jobo")
+
+[node name="animacion" type="VideoStreamPlayer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("1_y8odi")
+autoplay = true
+
+[node name="menu" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("3_m4vik")
+
+[connection signal="finished" from="animacion" to="." method="_on_animacion_finished"]
