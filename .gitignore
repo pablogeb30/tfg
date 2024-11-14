@@ -20,5 +20,7 @@ mono_crash.*.json
 # .obsidian
 .obsidian/
 
-# ejemplos
+# ejemplos y usc
 ejemplos/
+usc/
+
