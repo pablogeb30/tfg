@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var speed = 700
+@export var speed = 800
 var screen_size
 
 func _ready():
