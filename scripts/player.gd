@@ -1,13 +1,15 @@
 extends Area2D
 
-@export var speed = 800
-var screen_size
+class_name Player
+
+@export var speed = 800 # Velocidad del personaje
+var screen_size # Tamanho de la pantalla
 
 func _ready():
 	screen_size = get_viewport_rect().size
 	$AnimatedSprite2D.animation = "idle_front"
 	$AnimatedSprite2D.play()
-
+	
 func _process(delta):
 	var velocity = Vector2.ZERO
 	

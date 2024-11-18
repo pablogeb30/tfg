@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkkvpout2cegt"
-path="res://.godot/imported/player.png-063d3ba22eba7302ba05473cc1f94c0b.ctex"
+uid="uid://b3q5llb0t4vn0"
+path="res://.godot/imported/RJS_Clean&Cubed.png-0e819e7bcba8c75ab4999199934951e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mystic_woods_free_2/player.png"
-dest_files=["res://.godot/imported/player.png-063d3ba22eba7302ba05473cc1f94c0b.ctex"]
+source_file="res://assets/tiles/RJS_Clean&Cubed.png"
+dest_files=["res://.godot/imported/RJS_Clean&Cubed.png-0e819e7bcba8c75ab4999199934951e2.ctex"]
 
 [params]
 

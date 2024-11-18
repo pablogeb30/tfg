@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8vfhtt8ibkhn"
-path="res://.godot/imported/slime.png-b00bf1382566a795438d53e54490e683.ctex"
+uid="uid://sbnk3ln82h42"
+path="res://.godot/imported/Character-slide.png-a76eab89f54a5d6d04ce6016a1f10ea9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mystic_woods_free_2/slime.png"
-dest_files=["res://.godot/imported/slime.png-b00bf1382566a795438d53e54490e683.ctex"]
+source_file="res://assets/character/Character-Weapon/Character-slide.png"
+dest_files=["res://.godot/imported/Character-slide.png-a76eab89f54a5d6d04ce6016a1f10ea9.ctex"]
 
 [params]
 

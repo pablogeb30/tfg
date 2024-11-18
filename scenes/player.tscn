@@ -1,7 +1,7 @@
 [gd_scene load_steps=41 format=3 uid="uid://2onv0pgt0wqe"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_6ubmj"]
-[ext_resource type="Texture2D" uid="uid://dkkvpout2cegt" path="res://assets/mystic_woods_free_2/sprites/characters/player.png" id="2_phskm"]
+[ext_resource type="Texture2D" uid="uid://dkkvpout2cegt" path="res://assets/basic/player.png" id="2_phskm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3i8uf"]
 atlas = ExtResource("2_phskm")
@@ -289,8 +289,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3t8wo"]
-radius = 49.0
-height = 158.0
+radius = 57.0
+height = 180.0
 
 [node name="Player" type="Area2D"]
 script = ExtResource("1_6ubmj")
@@ -298,8 +298,10 @@ script = ExtResource("1_6ubmj")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(7, 7)
 sprite_frames = SubResource("SpriteFrames_ol1p1")
-animation = &"idle_front"
+animation = &"move_sides"
+frame = 3
+frame_progress = 0.287783
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(4, 53)
+position = Vector2(4, 46)
 shape = SubResource("CapsuleShape2D_3t8wo")
