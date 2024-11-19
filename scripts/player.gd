@@ -9,7 +9,8 @@ func _ready():
 	screen_size = get_viewport_rect().size
 	$AnimatedSprite2D.animation = "idle_front"
 	$AnimatedSprite2D.play()
-	
+
+
 func _process(delta):
 	var velocity = Vector2.ZERO
 	
