@@ -1,35 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://cw2cpb2whk25d"]
 
-[ext_resource type="PackedScene" uid="uid://bm1vvol1td3pj" path="res://scenes/portal.tscn" id="1_7rl37"]
 [ext_resource type="Script" path="res://scripts/room.gd" id="1_vemoc"]
+[ext_resource type="PackedScene" uid="uid://bm1vvol1td3pj" path="res://scenes/portal.tscn" id="2_cv755"]
 
 [node name="Room" type="Node2D"]
 script = ExtResource("1_vemoc")
+portal_scene = ExtResource("2_cv755")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1800.0
 offset_bottom = 1800.0
 color = Color(0.67328, 0.786024, 1, 1)
-
-[node name="Portals" type="Node" parent="."]
-
-[node name="PortalUp" parent="Portals" instance=ExtResource("1_7rl37")]
-position = Vector2(900, 30)
-rotation = 1.5708
-direction = "up"
-
-[node name="PortalDown" parent="Portals" instance=ExtResource("1_7rl37")]
-position = Vector2(900, 1776)
-rotation = 4.71239
-direction = "down"
-
-[node name="PortalLeft" parent="Portals" instance=ExtResource("1_7rl37")]
-position = Vector2(30, 901)
-direction = "left"
-
-[node name="PortalRight" parent="Portals" instance=ExtResource("1_7rl37")]
-position = Vector2(1776, 900)
-rotation = 3.14159
-direction = "right"
-
-[connection signal="opened_portal" from="Portals/PortalUp" to="." method="_on_portal_up_opened_portal"]
