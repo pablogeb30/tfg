@@ -10,4 +10,4 @@ portal_scene = ExtResource("2_cv755")
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1800.0
 offset_bottom = 1800.0
-color = Color(0.67328, 0.786024, 1, 1)
+color = Color(0, 0.470588, 1, 0.0784314)
