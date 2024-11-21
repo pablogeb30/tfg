@@ -19,3 +19,6 @@ mono_crash.*.json
 
 # docs
 docs/
+
+# tmp
+tmp/
