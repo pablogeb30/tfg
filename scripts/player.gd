@@ -16,6 +16,10 @@ func _physics_process(delta: float) -> void:
 	# Se recogen las entradas de teclado
 	var input = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	
+	# Normalizar el vector de entrada si es mayor que 1 (movimiento diagonal)
+	if input.length() > 1:
+		input = input.normalized()
+	
 	# Animaciones de movimiento
 	if input.length() > 0:
 		
