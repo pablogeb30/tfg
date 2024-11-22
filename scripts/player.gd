@@ -1,57 +1,73 @@
-extends Area2D
+extends CharacterBody2D
 
-class_name Player
+# Constantes del movimiento del personaje
+const MAX_SPEED = 400.0
+const ACCELERATION = 5000.0
+const FRICTION = 2500.0
 
-@export var speed = 600 # Velocidad normal del personaje
-@export var run_speed = 800 # Velocidad al correr
-var screen_size # Tamaño de la pantalla
+# Variable para el sprite animado
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-func _ready():
-	screen_size = get_viewport_rect().size
-	$AnimatedSprite2D.animation = "idle_up"
-	$AnimatedSprite2D.play()
+func _ready() -> void:
+	animated_sprite.play("idle_down")
 
-func _process(delta):
-	var velocity = Vector2.ZERO
-	var is_running = Input.is_action_pressed("run") # Detectar si se está corriendo
+
+func _physics_process(delta: float) -> void:
+	# Se recogen las entradas de teclado
+	var input = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	
-	# Detectar entrada del jugador
-	if Input.is_action_pressed("walk_right"):
-		velocity.x += 1
-	if Input.is_action_pressed("walk_left"):
-		velocity.x -= 1
-	if Input.is_action_pressed("walk_down"):
-		velocity.y += 1
-	if Input.is_action_pressed("walk_up"):
-		velocity.y -= 1
-
-	# Normalizar y escalar velocidad
-	if velocity.length() > 0:
-		velocity = velocity.normalized() * (run_speed if is_running else speed)
-
-	# Mover al personaje
-	position += velocity * delta
-	
-	# Clampear posición dentro de los límites de la pantalla (si no hay cámara)
-	position = position.clamp(Vector2.ZERO, screen_size)
-	
-	# Actualizar animación según la dirección y estado
-	if velocity.length() > 0:
-		if velocity.x > 0:  # Movimiento hacia la derecha
-			$AnimatedSprite2D.animation = "run_right" if is_running else "walk_right"
-		elif velocity.x < 0: # Movimiento hacia la izquierda
-			$AnimatedSprite2D.animation = "run_left" if is_running else "walk_left"
-		elif velocity.y > 0:  # Movimiento hacia abajo
-			$AnimatedSprite2D.animation = "run_down" if is_running else "walk_down"
-		elif velocity.y < 0:  # Movimiento hacia arriba
-			$AnimatedSprite2D.animation = "run_up" if is_running else "walk_up"
+	# Animaciones de movimiento
+	if input.length() > 0:
+		
+		# Se define la velocidad en funcion de las constantes
+		velocity = velocity.move_toward(input * MAX_SPEED, ACCELERATION * delta)
+		
+		# Manejo de animaciones diagonales
+		if input.x != 0 and input.y != 0:
+			if input.x > 0 and input.y > 0:
+				animated_sprite.play("run_rightdown")
+			elif input.x > 0 and input.y < 0:
+				animated_sprite.play("run_rightup")
+			elif input.x < 0 and input.y > 0:
+				animated_sprite.play("run_leftdown")
+			elif input.x < 0 and input.y < 0:
+				animated_sprite.play("run_leftup")
+		
+		# Manejo de animaciones para direcciones principales
+		else:
+			if abs(input.x) > abs(input.y):
+				if input.x > 0:
+					animated_sprite.play("run_right")
+				else:
+					animated_sprite.play("run_left")
+			else:
+				if input.y > 0:
+					animated_sprite.play("run_down")
+				else:
+					animated_sprite.play("run_up")
+					
+	# Animaciones idle
 	else:
-		# Cambiar a estado "idle" dependiendo de la última dirección
-		if $AnimatedSprite2D.animation in ["walk_right", "run_right"]:
-			$AnimatedSprite2D.animation = "idle_right"
-		elif $AnimatedSprite2D.animation in ["walk_left", "run_left"]:
-			$AnimatedSprite2D.animation = "idle_left"
-		elif $AnimatedSprite2D.animation in ["walk_down", "run_down"]:
-			$AnimatedSprite2D.animation = "idle_down"
-		elif $AnimatedSprite2D.animation in ["walk_up", "run_up"]:
-			$AnimatedSprite2D.animation = "idle_up"
+		# Se aplica la friccion al quedarse quieto el personaje
+		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+		
+		# Se muestra la animacion correspondiente
+		if animated_sprite.animation == "run_right":
+			animated_sprite.play("idle_right")
+		elif animated_sprite.animation == "run_left":
+			animated_sprite.play("idle_left")
+		elif animated_sprite.animation == "run_up":
+			animated_sprite.play("idle_up")
+		elif animated_sprite.animation == "run_down":
+			animated_sprite.play("idle_down")
+		elif animated_sprite.animation == "run_leftup":
+			animated_sprite.play("idle_leftup")
+		elif animated_sprite.animation == "run_leftdown":
+			animated_sprite.play("idle_leftdown")
+		elif animated_sprite.animation == "run_rightup":
+			animated_sprite.play("idle_rightup")
+		elif animated_sprite.animation == "run_rightdown":
+			animated_sprite.play("idle_rightdown")
+	
+	# Se mueve al personaje
+	move_and_slide()

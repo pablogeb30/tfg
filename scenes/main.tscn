@@ -1,13 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://evpbgvhwf21f"]
+[gd_scene load_steps=3 format=3 uid="uid://evpbgvhwf21f"]
 
 [ext_resource type="PackedScene" uid="uid://2onv0pgt0wqe" path="res://scenes/player.tscn" id="1_0lil0"]
-[ext_resource type="PackedScene" uid="uid://cw2cpb2whk25d" path="res://scenes/room.tscn" id="1_2qlvj"]
-[ext_resource type="Script" path="res://scripts/main.gd" id="1_e0yal"]
+[ext_resource type="PackedScene" uid="uid://c1jne0nrfk5g4" path="res://scenes/dungeon.tscn" id="4_3nvej"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_e0yal")
-room_scene = ExtResource("1_2qlvj")
 
 [node name="Player" parent="." instance=ExtResource("1_0lil0")]
 z_index = 1
 position = Vector2(900, 900)
+
+[node name="Camera" type="Camera2D" parent="Player"]
+zoom = Vector2(3, 3)
+limit_left = 0
+limit_top = 0
+limit_right = 25000
+limit_bottom = 25000
+limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 20.0
+
+[node name="Dungeon" parent="." instance=ExtResource("4_3nvej")]
