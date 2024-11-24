@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmbvkky8vr6g3"
-path="res://.godot/imported/Green Portal Sprite Sheet.png-fa6791ee780dea75b7d4a1927e356442.ctex"
+uid="uid://cno6bkixum7ed"
+path="res://.godot/imported/CastSpell_Shadowless.png-3f7a1225daf6a89b57402b91bc96ca5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portal/Green Portal Sprite Sheet.png"
-dest_files=["res://.godot/imported/Green Portal Sprite Sheet.png-fa6791ee780dea75b7d4a1927e356442.ctex"]
+source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/CastSpell_Shadowless.png"
+dest_files=["res://.godot/imported/CastSpell_Shadowless.png-3f7a1225daf6a89b57402b91bc96ca5f.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkkvpout2cegt"
-path="res://.godot/imported/player.png-e230e05e2d932a710303ee07f401e40f.ctex"
+uid="uid://cumqs7h7jxohf"
+path="res://.godot/imported/SlideEnd.png-556c988b5ee97fe1e7ccbadf92451c22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/player.png"
-dest_files=["res://.godot/imported/player.png-e230e05e2d932a710303ee07f401e40f.ctex"]
+source_file="res://tmp/2D Character Knight/Spritesheets/With Shadow/SlideEnd.png"
+dest_files=["res://.godot/imported/SlideEnd.png-556c988b5ee97fe1e7ccbadf92451c22.ctex"]
 
 [params]
 
