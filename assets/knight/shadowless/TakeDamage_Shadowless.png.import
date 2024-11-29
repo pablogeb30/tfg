@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnubxcb6d4cnp"
-path="res://.godot/imported/TakeDamage_Shadowless.png-6d975867a3affe07f18c4090e243dc83.ctex"
+path="res://.godot/imported/TakeDamage_Shadowless.png-645fd47b26310adc98cf26919aa6a687.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/TakeDamage_Shadowless.png"
-dest_files=["res://.godot/imported/TakeDamage_Shadowless.png-6d975867a3affe07f18c4090e243dc83.ctex"]
+source_file="res://assets/knight/shadowless/TakeDamage_Shadowless.png"
+dest_files=["res://.godot/imported/TakeDamage_Shadowless.png-645fd47b26310adc98cf26919aa6a687.ctex"]
 
 [params]
 

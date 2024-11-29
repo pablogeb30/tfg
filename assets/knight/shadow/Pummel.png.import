@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdxmnrpr2mu1d"
-path="res://.godot/imported/Pummel.png-fda0caefa42699ce6bd2fe2662caa98a.ctex"
+path="res://.godot/imported/Pummel.png-dea1e63b6381063db5afd6bb2805c735.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/With Shadow/Pummel.png"
-dest_files=["res://.godot/imported/Pummel.png-fda0caefa42699ce6bd2fe2662caa98a.ctex"]
+source_file="res://assets/knight/shadow/Pummel.png"
+dest_files=["res://.godot/imported/Pummel.png-dea1e63b6381063db5afd6bb2805c735.ctex"]
 
 [params]
 

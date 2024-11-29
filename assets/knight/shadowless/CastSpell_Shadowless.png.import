@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cno6bkixum7ed"
-path="res://.godot/imported/CastSpell_Shadowless.png-3f7a1225daf6a89b57402b91bc96ca5f.ctex"
+path="res://.godot/imported/CastSpell_Shadowless.png-5e6339509051f88cd7a64b44fe70a561.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/CastSpell_Shadowless.png"
-dest_files=["res://.godot/imported/CastSpell_Shadowless.png-3f7a1225daf6a89b57402b91bc96ca5f.ctex"]
+source_file="res://assets/knight/shadowless/CastSpell_Shadowless.png"
+dest_files=["res://.godot/imported/CastSpell_Shadowless.png-5e6339509051f88cd7a64b44fe70a561.ctex"]
 
 [params]
 

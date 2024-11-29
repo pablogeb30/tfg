@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfomdr4s4iujj"
-path="res://.godot/imported/StrafeLeft.png-fe347433525d0dec0c9cb3ccd36d8520.ctex"
+path="res://.godot/imported/StrafeLeft.png-9ece40cb65ba8cacd692bca9c49501b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/With Shadow/StrafeLeft.png"
-dest_files=["res://.godot/imported/StrafeLeft.png-fe347433525d0dec0c9cb3ccd36d8520.ctex"]
+source_file="res://assets/knight/shadow/StrafeLeft.png"
+dest_files=["res://.godot/imported/StrafeLeft.png-9ece40cb65ba8cacd692bca9c49501b9.ctex"]
 
 [params]
 

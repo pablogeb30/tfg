@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0bhd2713yf5"
-path="res://.godot/imported/StrafeLeft_Shadowless.png-57cdb40bf0af40d45e73cf3e6038b0f0.ctex"
+path="res://.godot/imported/StrafeLeft_Shadowless.png-ecf742edacd44d6d75c935891fbe14b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/StrafeLeft_Shadowless.png"
-dest_files=["res://.godot/imported/StrafeLeft_Shadowless.png-57cdb40bf0af40d45e73cf3e6038b0f0.ctex"]
+source_file="res://assets/knight/shadowless/StrafeLeft_Shadowless.png"
+dest_files=["res://.godot/imported/StrafeLeft_Shadowless.png-ecf742edacd44d6d75c935891fbe14b2.ctex"]
 
 [params]
 

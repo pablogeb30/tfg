@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://e0o0xwv1mitt"
-path="res://.godot/imported/CastSpell.png-0c22160e81abcda1f0b906a773958420.ctex"
+path="res://.godot/imported/CastSpell.png-98da04163a3f8324cdaa760aabdb8ca1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/With Shadow/CastSpell.png"
-dest_files=["res://.godot/imported/CastSpell.png-0c22160e81abcda1f0b906a773958420.ctex"]
+source_file="res://assets/knight/shadow/CastSpell.png"
+dest_files=["res://.godot/imported/CastSpell.png-98da04163a3f8324cdaa760aabdb8ca1.ctex"]
 
 [params]
 

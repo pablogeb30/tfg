@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3feeabh3ybx1"
-path="res://.godot/imported/Melee_Shadowless.png-1ac25acf326397e1cbfefaf010b9654b.ctex"
+path="res://.godot/imported/Melee_Shadowless.png-48f5036f231f9c9ec43bd5b83c41fb99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/Melee_Shadowless.png"
-dest_files=["res://.godot/imported/Melee_Shadowless.png-1ac25acf326397e1cbfefaf010b9654b.ctex"]
+source_file="res://assets/knight/shadowless/Melee_Shadowless.png"
+dest_files=["res://.godot/imported/Melee_Shadowless.png-48f5036f231f9c9ec43bd5b83c41fb99.ctex"]
 
 [params]
 

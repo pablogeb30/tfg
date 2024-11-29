@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccgiinxi6nqnh"
-path="res://.godot/imported/ShieldBlockStart_Shadowless.png-bf55229e6481af97a98274fdf2bc8465.ctex"
+path="res://.godot/imported/ShieldBlockStart_Shadowless.png-9ccce9c2dff943fad1fb3ec3ee5bbaad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/ShieldBlockStart_Shadowless.png"
-dest_files=["res://.godot/imported/ShieldBlockStart_Shadowless.png-bf55229e6481af97a98274fdf2bc8465.ctex"]
+source_file="res://assets/knight/shadowless/ShieldBlockStart_Shadowless.png"
+dest_files=["res://.godot/imported/ShieldBlockStart_Shadowless.png-9ccce9c2dff943fad1fb3ec3ee5bbaad.ctex"]
 
 [params]
 

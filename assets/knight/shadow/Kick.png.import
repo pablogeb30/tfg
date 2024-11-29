@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbg82raghhaud"
-path="res://.godot/imported/Kick.png-90d03f1aa9f9a8bba4a2da3e571c3d1a.ctex"
+path="res://.godot/imported/Kick.png-b313e0f97b102c3547205876e1a8584f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/With Shadow/Kick.png"
-dest_files=["res://.godot/imported/Kick.png-90d03f1aa9f9a8bba4a2da3e571c3d1a.ctex"]
+source_file="res://assets/knight/shadow/Kick.png"
+dest_files=["res://.godot/imported/Kick.png-b313e0f97b102c3547205876e1a8584f.ctex"]
 
 [params]
 

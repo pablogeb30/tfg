@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ig4kkysupd4j"
-path="res://.godot/imported/Special1_Shadowless.png-b5303fdbd49db40adb961e06ab0e8537.ctex"
+path="res://.godot/imported/Special1_Shadowless.png-ab420ec644978140686fbf343ee4e5b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/Special1_Shadowless.png"
-dest_files=["res://.godot/imported/Special1_Shadowless.png-b5303fdbd49db40adb961e06ab0e8537.ctex"]
+source_file="res://assets/knight/shadowless/Special1_Shadowless.png"
+dest_files=["res://.godot/imported/Special1_Shadowless.png-ab420ec644978140686fbf343ee4e5b5.ctex"]
 
 [params]
 

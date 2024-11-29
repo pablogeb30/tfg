@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8if2nrldkdu7"
-path="res://.godot/imported/Melee.png-546e2d5a92326dedf54ce46d05e2b38c.ctex"
+path="res://.godot/imported/Melee.png-5f0a4bfcb38facff9ec25f99fcc661ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/With Shadow/Melee.png"
-dest_files=["res://.godot/imported/Melee.png-546e2d5a92326dedf54ce46d05e2b38c.ctex"]
+source_file="res://assets/knight/shadow/Melee.png"
+dest_files=["res://.godot/imported/Melee.png-5f0a4bfcb38facff9ec25f99fcc661ca.ctex"]
 
 [params]
 

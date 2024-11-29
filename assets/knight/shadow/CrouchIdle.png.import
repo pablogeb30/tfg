@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtpe466qmn5q0"
-path="res://.godot/imported/CrouchIdle.png-0064574013b9d7d2cf064d1ef7269b51.ctex"
+path="res://.godot/imported/CrouchIdle.png-578c4767606293514b8a5e813ea5fb60.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/With Shadow/CrouchIdle.png"
-dest_files=["res://.godot/imported/CrouchIdle.png-0064574013b9d7d2cf064d1ef7269b51.ctex"]
+source_file="res://assets/knight/shadow/CrouchIdle.png"
+dest_files=["res://.godot/imported/CrouchIdle.png-578c4767606293514b8a5e813ea5fb60.ctex"]
 
 [params]
 

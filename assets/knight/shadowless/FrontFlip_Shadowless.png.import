@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8q520p6hc8p4"
-path="res://.godot/imported/FrontFlip_Shadowless.png-2ad473be2d9e76bb9f6d3286a0e5a6b9.ctex"
+path="res://.godot/imported/FrontFlip_Shadowless.png-178962943f307d9972c2f2ca34d59d36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/FrontFlip_Shadowless.png"
-dest_files=["res://.godot/imported/FrontFlip_Shadowless.png-2ad473be2d9e76bb9f6d3286a0e5a6b9.ctex"]
+source_file="res://assets/knight/shadowless/FrontFlip_Shadowless.png"
+dest_files=["res://.godot/imported/FrontFlip_Shadowless.png-178962943f307d9972c2f2ca34d59d36.ctex"]
 
 [params]
 

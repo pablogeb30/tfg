@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://oxp0wgmek0k5"
-path="res://.godot/imported/180Turn_Shadowless.png-f0287d7d5e6c43ffbfc9e40aa8e89d86.ctex"
+path="res://.godot/imported/180Turn_Shadowless.png-2243183c4ca8cef0c44541766eecbc62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/180Turn_Shadowless.png"
-dest_files=["res://.godot/imported/180Turn_Shadowless.png-f0287d7d5e6c43ffbfc9e40aa8e89d86.ctex"]
+source_file="res://assets/knight/shadowless/180Turn_Shadowless.png"
+dest_files=["res://.godot/imported/180Turn_Shadowless.png-2243183c4ca8cef0c44541766eecbc62.ctex"]
 
 [params]
 

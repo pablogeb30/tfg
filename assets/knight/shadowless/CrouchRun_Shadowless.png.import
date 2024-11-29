@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c675aa2y5rjk"
-path="res://.godot/imported/CrouchRun_Shadowless.png-0f4329119b7ec5e3509b562897f634ca.ctex"
+path="res://.godot/imported/CrouchRun_Shadowless.png-966f2b51793f97f51987e18d0328ef13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tmp/2D Character Knight/Spritesheets/Shadowless/CrouchRun_Shadowless.png"
-dest_files=["res://.godot/imported/CrouchRun_Shadowless.png-0f4329119b7ec5e3509b562897f634ca.ctex"]
+source_file="res://assets/knight/shadowless/CrouchRun_Shadowless.png"
+dest_files=["res://.godot/imported/CrouchRun_Shadowless.png-966f2b51793f97f51987e18d0328ef13.ctex"]
 
 [params]
 
