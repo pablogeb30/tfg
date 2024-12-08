@@ -18,5 +18,11 @@ limit_bottom = 25000
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 20.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.13
+drag_top_margin = 0.13
+drag_right_margin = 0.13
+drag_bottom_margin = 0.13
 
 [node name="Dungeon" parent="." instance=ExtResource("4_3nvej")]
