@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 # Constantes del movimiento del personaje
-const MAX_SPEED = 400.0
-const ACCELERATION = 5000.0
-const FRICTION = 2500.0
+const MAX_SPEED = 500.0
+const ACCELERATION = 6000.0
+const FRICTION = 4000.0
 
 # Variable para el sprite animado
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
