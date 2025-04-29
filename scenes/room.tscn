@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1yy4d83uqw5v"]
 
-[ext_resource type="Script" path="res://scripts/room.gd" id="1_gb5fj"]
+[ext_resource type="Script" uid="uid://uuhpcn31k7kv" path="res://scripts/room.gd" id="1_gb5fj"]
 [ext_resource type="PackedScene" uid="uid://cqfaktsu0eir" path="res://scenes/door.tscn" id="2_ncunb"]
 [ext_resource type="Texture2D" uid="uid://ce70khwjwjw8x" path="res://assets/dungeon/basic_dungeon_room.png" id="2_vwy6q"]
 
