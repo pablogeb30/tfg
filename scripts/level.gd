@@ -12,7 +12,7 @@ func _ready():
 	randomize()
 	# Generate the dungeon by placing rooms and connecting them
 	generate_level()
-	
+
 func generate_level():
 	var rooms = []  # Lista para almacenar las salas generadas
 	for i in range(room_count):
@@ -43,4 +43,4 @@ func create_additional_connections(rooms):
 			var random_room = rooms[randi() % rooms.size()]
 			# Asegurarse de no conectar una sala consigo misma o duplicar conexiones
 			if not room.is_connected_room(random_room) and room != random_room:
-				room.connect_room(random_room)	
+				room.connect_room(random_room)

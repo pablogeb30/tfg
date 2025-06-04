@@ -25,7 +25,7 @@ state: true
 - El juego se va a desarrollar en Godot
 - El juego se va a poder jugar en PC
 ### Camara
-- Vista cenital con un poco de inclinación 
+- Vista cenital con un poco de inclinación
 - Centrada en el jugador
 - Bastante distancia al jugador (visión amplia del entorno)
 - Ventana del juego ocupa todo el ancho:

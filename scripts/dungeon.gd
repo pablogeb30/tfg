@@ -13,11 +13,11 @@ const MAX_ROOMS = 50
 var floor_tile := Vector2i(2,3)
 var wall_tile_bottom := Vector2i(1,1)
 var wall_tile_top := Vector2i(8,0)
- 
+
 # Arrays to hold the grid data and the list of rooms
 var grid = []
 var rooms = []
- 
+
 # _ready is called when the node is added to the scene
 func _ready():
 	# Initialize the random number generator
@@ -74,7 +74,7 @@ func place_room(room):
 		for y in range(room.position.y, room.end.y):
 			if grid[x][y] == 0:  # If the cell is already a floor
 				return false  # Room cannot be placed, return false
-	
+
 	# If no overlap is found, mark the room area as floors (set cells to 0)
 	for x in range(room.position.x, room.end.x):
 		for y in range(room.position.y, room.end.y):
@@ -94,9 +94,9 @@ func connect_rooms(room1, room2, corridor_width=3.0):
 		int(room2.position.x + room2.size.x / 2),
 		int(room2.position.y + room2.size.y / 2)
 	)
-	
+
 	var current = start
-	
+
 	# First, move horizontally towards the end point
 	while current.x != end.x:
 		# Move one step left or right
@@ -107,7 +107,7 @@ func connect_rooms(room1, room2, corridor_width=3.0):
 				# Ensure we don't go out of grid bounds
 				if current.y + j >= 0 and current.y + j < HEIGHT and current.x + i >= 0 and current.x + i < WIDTH:
 					grid[current.x + i][current.y + j] = 0  # Set cells to floor
- 
+
 	# Then, move vertically towards the end point
 	while current.y != end.y:
 		# Move one step up or down

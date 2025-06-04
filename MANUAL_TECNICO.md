@@ -1,32 +1,35 @@
-# Manual Técnico (Integración de Pre-commit)
+# Manual Técnico
+
+## Integración de Pre-commit
 
 Este documento describe cómo configurar y utilizar los ganchos de pre-commit en este proyecto.
 
-## Requisitos previos
+### Requisitos previos
 
 1. **Python 3.8 o superior** con la herramienta `pip` disponible.
 2. **Git** para el control de versiones.
 
-## Instalación de pre-commit
+### Instalación de pre-commit
 
 1. Instale la herramienta `pre-commit`:
    ```bash
    pip install pre-commit
    ```
+
 2. Desde la raíz del repositorio, ejecute:
    ```bash
    pre-commit install
    ```
-   Esto configurará los ganchos para que se ejecuten automáticamente al realizar un `git commit`.
+Esto configurará los ganchos para que se ejecuten automáticamente al realizar un `git commit`.
 
-## Uso manual
+### Uso manual
 
 Si desea ejecutar los ganchos de forma manual sobre todo el código:
 ```bash
 pre-commit run --all-files
 ```
 
-## Hooks configurados
+### Hooks configurados
 
 El archivo `.pre-commit-config.yaml` incluye los siguientes hooks del repositorio [pre-commit-hooks](https://github.com/pre-commit/pre-commit-hooks):
 

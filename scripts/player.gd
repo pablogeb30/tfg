@@ -15,17 +15,17 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	# Se recogen las entradas de teclado
 	var input = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	
+
 	# Normalizar el vector de entrada si es mayor que 1 (movimiento diagonal)
 	if input.length() > 1:
 		input = input.normalized()
-	
+
 	# Animaciones de movimiento
 	if input.length() > 0:
-		
+
 		# Se define la velocidad en funcion de las constantes
 		velocity = velocity.move_toward(input * MAX_SPEED, ACCELERATION * delta)
-		
+
 		# Manejo de animaciones diagonales
 		if input.x != 0 and input.y != 0:
 			if input.x > 0 and input.y > 0:
@@ -36,7 +36,7 @@ func _physics_process(delta: float) -> void:
 				animated_sprite.play("run_leftdown")
 			elif input.x < 0 and input.y < 0:
 				animated_sprite.play("run_leftup")
-		
+
 		# Manejo de animaciones para direcciones principales
 		else:
 			if abs(input.x) > abs(input.y):
@@ -49,12 +49,12 @@ func _physics_process(delta: float) -> void:
 					animated_sprite.play("run_down")
 				else:
 					animated_sprite.play("run_up")
-					
+
 	# Animaciones idle
 	else:
 		# Se aplica la friccion al quedarse quieto el personaje
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-		
+
 		# Se muestra la animacion correspondiente
 		if animated_sprite.animation == "run_right":
 			animated_sprite.play("idle_right")
@@ -72,6 +72,6 @@ func _physics_process(delta: float) -> void:
 			animated_sprite.play("idle_rightup")
 		elif animated_sprite.animation == "run_rightdown":
 			animated_sprite.play("idle_rightdown")
-	
+
 	# Se mueve al personaje
 	move_and_slide()
