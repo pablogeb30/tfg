@@ -1781,5 +1781,4 @@ animation = &"run_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 7)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_y1lr3")

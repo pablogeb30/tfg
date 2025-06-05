@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1yy4d83uqw5v"]
+[gd_scene load_steps=5 format=3 uid="uid://d1yy4d83uqw5v"]
 
 [ext_resource type="Script" uid="uid://uuhpcn31k7kv" path="res://scripts/room.gd" id="1_gb5fj"]
 [ext_resource type="PackedScene" uid="uid://cqfaktsu0eir" path="res://scenes/door.tscn" id="2_ncunb"]
@@ -6,8 +6,6 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ecl6m"]
 size = Vector2(224, 112)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6yqxi"]
 
 [node name="Room" type="Node2D"]
 z_index = -1
@@ -43,54 +41,32 @@ position = Vector2(160, 90)
 shape = SubResource("RectangleShape2D_ecl6m")
 debug_color = Color(0.984314, 0, 0.329412, 0.419608)
 
-[node name="DoorUp" parent="." instance=ExtResource("2_ncunb")]
+[node name="Puerta_Norte" parent="." instance=ExtResource("2_ncunb")]
 position = Vector2(960, 90)
 scale = Vector2(6, 6)
-metadata/_edit_group_ = true
 
-[node name="Marker2D" parent="DoorUp" index="0"]
+[node name="Marker2D" type="Marker2D" parent="Puerta_Norte"]
 position = Vector2(0, -60)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorUp"]
-shape = SubResource("RectangleShape2D_6yqxi")
-
-[node name="DoorLeft" parent="." instance=ExtResource("2_ncunb")]
-position = Vector2(171, 540)
+[node name="Puerta_Oeste" parent="." instance=ExtResource("2_ncunb")]
+position = Vector2(174, 540)
 scale = Vector2(6, 6)
-metadata/_edit_group_ = true
 
-[node name="Marker2D" parent="DoorLeft" index="0"]
+[node name="Marker2D" type="Marker2D" parent="Puerta_Oeste"]
 position = Vector2(-80, -2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorLeft"]
-position = Vector2(-0.5, 0)
-shape = SubResource("RectangleShape2D_6yqxi")
-
-[node name="DoorRight" parent="." instance=ExtResource("2_ncunb")]
+[node name="Puerta_Este" parent="." instance=ExtResource("2_ncunb")]
 position = Vector2(1746, 540)
 scale = Vector2(6, 6)
-metadata/_edit_group_ = true
 
-[node name="Marker2D" parent="DoorRight" index="0"]
+[node name="Marker2D" type="Marker2D" parent="Puerta_Este"]
 position = Vector2(80, -2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorRight"]
-shape = SubResource("RectangleShape2D_6yqxi")
-
-[node name="DoorDown" parent="." instance=ExtResource("2_ncunb")]
+[node name="Puerta_Sur" parent="." instance=ExtResource("2_ncunb")]
 position = Vector2(960, 990)
 scale = Vector2(6, 6)
-metadata/_edit_group_ = true
 
-[node name="Marker2D" parent="DoorDown" index="0"]
+[node name="Marker2D" type="Marker2D" parent="Puerta_Sur"]
 position = Vector2(0, 40)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorDown"]
-shape = SubResource("RectangleShape2D_6yqxi")
-
 [connection signal="body_entered" from="PlayerDetector" to="." method="_on_player_detector_body_entered"]
-
-[editable path="DoorUp"]
-[editable path="DoorLeft"]
-[editable path="DoorRight"]
-[editable path="DoorDown"]

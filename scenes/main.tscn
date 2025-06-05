@@ -2,29 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://2onv0pgt0wqe" path="res://scenes/player.tscn" id="1_0lil0"]
 [ext_resource type="Script" uid="uid://bfs30irjwxy4i" path="res://scripts/camera.gd" id="2_6r3x6"]
-[ext_resource type="PackedScene" uid="uid://d1yy4d83uqw5v" path="res://scenes/room.tscn" id="3_o3fa1"]
+[ext_resource type="PackedScene" uid="uid://wq6q1u87e7wg" path="res://scenes/level.tscn" id="2_sugp2"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_0lil0")]
-z_index = 1
 position = Vector2(960, 540)
 
-[node name="Room" parent="." instance=ExtResource("3_o3fa1")]
+[node name="Level" parent="." instance=ExtResource("2_sugp2")]
 
-[node name="Room2" parent="." instance=ExtResource("3_o3fa1")]
-position = Vector2(0, 1080)
-
-[node name="Room3" parent="." instance=ExtResource("3_o3fa1")]
-position = Vector2(1920, 0)
-
-[node name="Room4" parent="." instance=ExtResource("3_o3fa1")]
-position = Vector2(0, -1080)
-
-[node name="Room5" parent="." instance=ExtResource("3_o3fa1")]
-position = Vector2(-1920, 0)
-
-[node name="Camera" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
